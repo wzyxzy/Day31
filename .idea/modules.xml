@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Day31.iml" filepath="$PROJECT_DIR$/Day31.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/bbcnews/bbcnews.iml" filepath="$PROJECT_DIR$/bbcnews/bbcnews.iml" />
+      <module fileurl="file://$PROJECT_DIR$/googleexplore/googleexplore.iml" filepath="$PROJECT_DIR$/googleexplore/googleexplore.iml" />
+      <module fileurl="file://$PROJECT_DIR$/html5_page/html5_page.iml" filepath="$PROJECT_DIR$/html5_page/html5_page.iml" />
+      <module fileurl="file://$PROJECT_DIR$/refresh/refresh.iml" filepath="$PROJECT_DIR$/refresh/refresh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/teachlibrary/teachlibrary.iml" filepath="$PROJECT_DIR$/teachlibrary/teachlibrary.iml" />
+      <module fileurl="file://$PROJECT_DIR$/testlibrary/testlibrary.iml" filepath="$PROJECT_DIR$/testlibrary/testlibrary.iml" />
+    </modules>
+  </component>
+</project>

@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>代理商员工后台</title>
+		<link rel="stylesheet" type="text/css" href="css/common/reset_m.css" />
+		<link rel="stylesheet" type="text/css" href="css/agent.css" />
+		<script src="js/common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/agent.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/agentfuben.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="display: none;">
+		<!--时间弹框-->
+		<div class="modalTime">
+			<div class="datetime">
+				<label><span>选择</span><input type="date" name="" id="" value=""/></label>
+				<label><span>至</span><input type="date" name="" id="" value="" /></label>
+				<div class="timeBtn">
+					<button type="button" onclick="exitModal()">取消</button>
+					<button type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<!--禁止橫屏浏览-->
+		<div class="landscape_notice">
+			<div class="noticeDiv">
+				<i></i><br><span>请将屏幕竖向浏览</span>
+			</div>
+		</div>
+		<!---->
+		<div class="header w abs">
+			<a class="go-back fl" href='javascript:window.history.go(-1)'></a>
+			<p class="a-title text-center fl">代理商员工后台</p>
+		</div>
+		<div class="a_container w">
+			<div class="m_break"></div>
+			<div class="ainfo w ovfl">
+				<div class="a_logo fl">
+					<a href="javascript:;" class="a_logoimg"><img src="img/t.jpg" /></a>
+					<button type="button" class="editInfo" onclick="editInfo()">编辑</button>
+				</div>
+				<div class="a_info fl staff_info">
+					<div class="ainfo_tit editable" style="width: 100%;">张三</div>
+					<div>
+						<label class="fl">所属加盟商：</label>
+						<div class="editable fl" style="width: 182px;">XX</div>
+					</div>
+					<div>
+						<label class="intro fl">简介：</label>
+						<div class="editable intro fl" style="width: 266px;">xxxxxxxxxxxxxxxxxxxxx</div>
+					</div>
+					<div><label class="fl">联系电话：</label>
+						<div class="editable fl" style="width: 210px;">15468641211</div>
+					</div>
+					<div><label class="fl">邀请码：</label>
+						<div class="editable fl" style="width: 238px;">1546864121</div>
+					</div>
+				</div>
+			</div>
+			<div class="m_break"></div>
+			<div class="a_content w ovfl">
+				<ul class="atit_list w ovfl">
+					<li class="tit_nav active">我的店铺</li>
+					<li class="tit_nav">我的同事</li>
+				</ul>
+				<div class="listCon w" id="listCon1">
+					<div class="lcTop">
+						<p class="fl lcUlchild lcTop_title">业绩周期</p>
+						<ul class="lcUl ovfl fl">
+							<li class="lcUlchild lcUli">本周</li>
+							<li class="lcUlchild active lcUli">本月</li>
+							<li class="lcUlchild lcUli">本季</li>
+						</ul>
+						<a href="javascript:;" class="fl lcUlchild" onclick="modalTime()"></a>
+					</div>
+					<div class="bodyContainer" id="wrapper0">
+						<table border="1" class="text-center w a_table scroll-wrap">
+							<thead>
+								<tr>
+									<th>店铺名称</th>
+									<th>地址</th>
+									<th>营业额</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000.00</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000.00</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000.00</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="lc_bottom">
+						<p>总分润：<span class="my_red">￥101,122.00</span></p>
+					</div>
+				</div>
+				<div class="listCon w hide" id="listCon2">
+					<div class="lcTop">
+						<p class="fl lcUlchild lcTop_title">业绩周期</p>
+						<ul class="lcUl ovfl fl">
+							<li class="lcUlchild lcUli">本周</li>
+							<li class="lcUlchild active lcUli">本月</li>
+							<li class="lcUlchild lcUli">本季</li>
+						</ul>
+						<a href="javascript:;" class="fl lcUlchild" onclick="modalTime()"></a>
+					</div>
+					<div class="bodyContainer " id="wrapper1">
+						<table border="1" class="text-center w a_table scroll-wrap">
+							<thead>
+								<tr>
+									<th>同事</th>
+									<th>地址</th>
+									<th>营业额</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>李安琪</td>
+									<td>朝阳区十里河</td>
+									<td>￥50000.00</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>朝阳区方庄</td>
+									<td>￥35000.28</td>
+								</tr>
+								<tr>
+									<td>李四</td>
+									<td>朝阳区高碑店</td>
+									<td>￥20582.66</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="lc_bottom">
+						<p>总分润：<span class="my_red">￥1,011.82</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script>
+		agentSort.pageKey = "fenrun";
+		agentSort.$page = $(".a_content");
+		agentSort.iscrollWrap = "#wrapper";
+		var infoToggle = true;
+
+		function editInfo() {
+			var length = $('.editable').length;
+			if (infoToggle) {
+				$('.editInfo').html('保存');
+				for (var i = 0; i < length; i++) {
+					var $html = $('.editable').eq(i).html();
+					$('.editable').eq(i).html('<input type="text" value="' + $html + '" />');
+				}
+				infoToggle = false;
+			} else {
+				$('.editInfo').html('编辑');
+				for (var i = 0; i < length; i++) {
+					var $html = $('.editable').eq(i).find('input').val();
+					$('.editable').eq(i).html($html);
+				}
+				infoToggle = true;
+			}
+		}
+
+		function modalTime() {
+			$('.modalTime').fadeIn(400);
+		}
+
+		function exitModal() {
+			$('.modalTime').fadeOut(400);
+		}
+	</script>
+
+</html>

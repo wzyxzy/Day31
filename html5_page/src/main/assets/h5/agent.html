@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
+		<title>代理商后台</title>
+		<link rel="stylesheet" type="text/css" href="css/common/reset_m.css" />
+		<link rel="stylesheet" type="text/css" href="css/agent.css" />
+		<script src="js/common/jquery-1.11.1.min.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common/zoom.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/common/iscroll.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/list.js" type="text/javascript" charset="utf-8"></script>
+		<!--<script src="js/agent.js" type="text/javascript" charset="utf-8"></script>-->
+		<script src="js/agentfuben.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+
+	<body style="display: none;">
+		<!--时间弹框-->
+		<div class="modalTime">
+			<div class="datetime">
+				<label><span>选择</span><input type="date" name="" id="" value=""/></label>
+				<label><span>至</span><input type="date" name="" id="" value="" /></label>
+				<div class="timeBtn">
+					<button type="button" onclick="exitModal()">取消</button>
+					<button type="button">确定</button>
+				</div>
+			</div>
+		</div>
+		<!---->
+		<!--禁止橫屏浏览-->
+		<div class="landscape_notice">
+			<div class="noticeDiv">
+				<i></i><br><span>请将屏幕竖向浏览</span>
+			</div>
+		</div>
+		<!---->
+		<div class="header w abs">
+			<a class="go-back fl" href='javascript:window.history.go(-1)'></a>
+			<p class="a-title text-center fl">代理商后台</p>
+		</div>
+		<div class="a_container w">
+			<div class="m_break"></div>
+			<div class="ainfo w ovfl">
+				<div class="a_logo fl">
+					<a href="javascript:;" class="a_logoimg"><img src="img/t.jpg" /></a>
+				</div>
+				<div class="a_info fl">
+					<div class="ainfo_tit">北京华联</div>
+					<div>负责人：李安</div>
+					<div>联系电话：18640978610</div>
+					<div>邀请码：1546864121</div>
+				</div>
+			</div>
+			<div class="m_break"></div>
+			<div class="a_content w ovfl">
+				<ul class="atit_list w ovfl">
+					<li class="tit_nav active">我的利润</li>
+					<li class="tit_nav">员工业绩</li>
+					<li class="tit_nav">员工管理</li>
+					<div class="fr addStaff hide" onclick="window.location.href = 'addstaff.html'"></div>
+				</ul>
+				<div class="listCon w" id="listCon1">
+					<div class="lcTop">
+						<p class="fl lcUlchild lcTop_title">业绩周期</p>
+						<ul class="lcUl ovfl fl">
+							<li class="lcUlchild lcUli">本周</li>
+							<li class="lcUlchild active lcUli">本月</li>
+							<li class="lcUlchild lcUli">本季</li>
+						</ul>
+						<a href="javascript:;" class="fl lcUlchild" onclick="modalTime()">
+
+						</a>
+					</div>
+					<div class="bodyContainer" id="wrapper0">
+						<table border="1" class="text-center a_table scroll-wrap" style="width: 900px;">
+							<thead>
+								<tr>
+									<th>店铺名称</th>
+									<th>地址</th>
+									<th>营业额</th>
+									<th>利润(%)</th>
+									<th>负责人</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+								<tr>
+									<td>京客隆</td>
+									<td>朝阳区东坝</td>
+									<td>￥50000</td>
+									<td>￥5000(10%)</td>
+									<td>张三</td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+					<div class="lc_bottom">
+						<p>总分润：<span class="my_red">￥1,122.28</span></p>
+						<p><a href="javascript:$('.a_hide').removeClass('hide');" class="lc_rule">分润规则</a></p>
+					</div>
+				</div>
+				<div class="listCon w hide" id="listCon2">
+					<div class="lcTop">
+						<p class="fl lcUlchild lcTop_title">业绩周期</p>
+						<ul class="lcUl ovfl fl">
+							<li class="lcUlchild lcUli">本周</li>
+							<li class="lcUlchild active lcUli">本月</li>
+							<li class="lcUlchild lcUli">本季</li>
+						</ul>
+						<a href="javascript:;" class="fl lcUlchild" onclick="modalTime()"></a>
+					</div>
+					<div class="bodyContainer " id="wrapper1">
+						<table border="1" class="text-center w a_table scroll-wrap">
+							<thead>
+								<tr>
+									<th>员工</th>
+									<th>电话</th>
+									<th>负责区域</th>
+									<th>营业额</th>
+									<th>分润额(%)</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>李安琪</td>
+									<td>18600395678</td>
+									<td>十里河</td>
+									<td>￥50000.00</td>
+									<td>￥5000(10%)</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>18600395678</td>
+									<td>方庄</td>
+									<td>￥35000.28</td>
+									<td>￥2754(9%)</td>
+								</tr>
+								<tr>
+									<td>李四</td>
+									<td>18600395678</td>
+									<td>高碑店</td>
+									<td>￥20582.66</td>
+									<td>￥2469(12%)</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>18600395678</td>
+									<td>方庄</td>
+									<td>￥35000.28</td>
+									<td>￥2754(9%)</td>
+								</tr>
+								<tr>
+									<td>李四</td>
+									<td>18600395678</td>
+									<td>高碑店</td>
+									<td>￥20582.66</td>
+									<td>￥2469(12%)</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>18600395678</td>
+									<td>方庄</td>
+									<td>￥35000.28</td>
+									<td>￥2754(9%)</td>
+								</tr>
+								<tr>
+									<td>李四</td>
+									<td>18600395678</td>
+									<td>高碑店</td>
+									<td>￥20582.66</td>
+									<td>￥2469(12%)</td>
+								</tr>
+								<tr>
+									<td>张三</td>
+									<td>18600395678</td>
+									<td>方庄</td>
+									<td>￥35000.28</td>
+									<td>￥2754(9%)</td>
+								</tr>
+								<tr>
+									<td>李四</td>
+									<td>18600395678</td>
+									<td>高碑店</td>
+									<td>￥20582.66</td>
+									<td>￥2469(12%)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+					<div class="lc_bottom">
+						<p>总分润：<span class="my_red">￥1,011.82</span></p>
+						<p><a href="javascript:$('.a_hide').removeClass('hide');" class="lc_rule">分润规则</a></p>
+					</div>
+				</div>
+				<div class="listCon w hide" id="listCon3">
+					<div class="bodyContainer lContainer3" id="wrapper2">
+						<ul class="staffUl scroll-wrap">
+							<li class="staffLi">
+								<input type="checkbox" class="fl staffInp" name="" checked="checked" />
+								<a href="" class="fl"><img src="img/t.jpg" /></a>
+								<div class="fl staffMan">
+									<p class="staffName">陈明 （北京- 朝阳）</p>
+									<p class="intro">简介：xxxxxxxxxxx</p>
+									<p>电话：13645671324</p>
+								</div>
+							</li>
+							<li class="staffLi">
+								<input type="checkbox" class="fl staffInp" name="" />
+								<a href="" class="fl"><img src="img/t.jpg" /></a>
+								<div class="fl staffMan">
+									<p class="staffName">欢欢 （北京- 东城）</p>
+									<p class="intro">简介：xxxxxxxxxxx</p>
+									<p>电话：13645671324</p>
+								</div>
+							</li>
+							<li class="staffLi">
+								<input type="checkbox" class="fl staffInp" name="" />
+								<a href="" class="fl"><img src="img/t.jpg" /></a>
+								<div class="fl staffMan">
+									<p class="staffName">张三 （北京- 西城）</p>
+									<p class="intro">简介：xxxxxxxxxxx</p>
+									<p>电话：13645671324</p>
+								</div>
+							</li>
+							<li class="staffLi">
+								<input type="checkbox" class="fl staffInp" name="" />
+								<a href="" class="fl"><img src="img/t.jpg" /></a>
+								<div class="fl staffMan">
+									<p class="staffName">李四 （北京- 通州）</p>
+									<p class="intro">简介：xxxxxxxxxxx</p>
+									<p>电话：13645671324</p>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="lcBottom3">
+						<label>
+							<input type="checkbox" name="" id="" value="" class="allselect"/>全选
+						</label>
+						<button type="button" class="staffRemove" id='sraffMove'>删除</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="a_hide text-center w hide">
+			<h3>分润规则</h3>
+			<ul start="1" class="ahi_ul">
+				<li>1、订单完成七天后，未退货，则分润打入到余额中（7 天内退货的不计分润）
+				</li>
+				<li>2、分润默认打到我的余额里，余额可以提现</li>
+			</ul>
+		</div>
+	</body>
+	<script>
+		agentSort.pageKey = "fenrun";
+		agentSort.$page = $(".a_content");
+		agentSort.iscrollWrap = "#wrapper";
+	</script>
+	<script type="text/javascript">
+		function modalTime() {
+			$('.modalTime').fadeIn(400);
+		}
+
+		function exitModal() {
+			$('.modalTime').fadeOut(400);
+		}
+	</script>
+
+</html>

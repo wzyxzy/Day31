@@ -1,0 +1,579 @@
+@charset "utf-8";
+body,
+html {
+	height: 100%;
+	width: 100%;
+	overflow: hidden;
+	color: #333333;
+	background: rgb(248, 248, 248) none repeat scroll 0% 0%;
+}
+
+.a_container {
+	position: absolute;
+	top: 88px;
+	overflow: hidden;
+	overflow-x: auto;
+	bottom: 0;
+	left: 0;
+}
+
+.m_break {
+	height: 10px;
+	background: #EBEBEB;
+}
+
+.scroll-wrap {
+	position: absolute;
+	overflow-x: auto;
+	z-index: 1000;
+	-webkit-tap-highlight-color: transparent;
+	width: 100%;
+}
+
+.a_table {
+	border-color: #CCCCCC;
+	border-left: none;
+	border-right: none;
+}
+
+.a_table thead {
+	font-size: 26px;
+}
+
+.a_table tbody {
+	font-size: 24px;
+}
+
+.a_table th,
+.a_table td {
+	padding: 10px 0;
+}
+
+.my_red {
+	color: #ff2222;
+}
+
+
+/*头部*/
+
+.header {
+	top: 0;
+	left: 0;
+	height: 88px;
+	background: #af2942;
+	color: #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+.go-back {
+	display: block;
+	width: 20%;
+	height: 100%;
+	background: url(../img/agent/return.png) no-repeat center;
+}
+
+.a-title {
+	width: 60%;
+	height: 87px;
+	line-height: 88px;
+	font-size: 36px;
+}
+
+
+/*代理商信息*/
+
+.ainfo {
+	padding: 20px 30px;
+	height: 300px;
+	background: #ffffff;
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+}
+
+.a_logoimg {
+	display: block;
+	padding: 10px;
+	width: 180px;
+}
+
+.a_logoimg img {
+	width: 100%;
+}
+
+.a_info {
+	margin-left: 20px;
+	width: 350px;
+}
+
+.a_info>div {
+	margin-bottom: 20px;
+}
+
+.ainfo_tit {
+	font-size: 38px;
+	font-weight: bold;
+}
+
+
+/*正文*/
+
+.a_content {
+	position: absolute;
+	top: 320px;
+	bottom: 0px;
+	background: #FFFFFF;
+	min-height: 622px;
+}
+
+.bodyContainer {
+	position: absolute;
+	top: 130px;
+	left: 0;
+	right: 0;
+	bottom: 110px;
+	overflow: hidden;
+}
+
+.atit_list {
+	height: 66px;
+	line-height: 66px;
+}
+
+.tit_nav {
+	float: left;
+	height: 100%;
+	width: 25%;
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+	text-align: center;
+}
+
+.tit_nav.active {
+	background: #AF2942;
+	color: #FFFFFF;
+}
+
+.listCon {
+	position: absolute;
+	top: 66px;
+	bottom: 0px;
+	left: 0;
+	border-top: 1px solid #AF2942;
+}
+
+.lcTop {
+	padding: 30px 0;
+	overflow: hidden;
+}
+
+.lcTop_title {
+	font-weight: 600;
+}
+
+.lcUl {
+	width: 340px;
+}
+
+.lcUlchild {
+	padding: 12px;
+	margin-left: 20px;
+}
+
+.lcUli {
+	float: left;
+	border: 1px solid #CCCCCC;
+	border-radius: 14px;
+}
+
+.lcUli.active {
+	border: 1px solid transparent;
+	background: #AF2942;
+	color: #fff;
+}
+
+.lcTop p {
+	margin-right: 26px;
+}
+
+a.lcUlchild {
+	background: url(../img/agent/iconfont-eber031.png) no-repeat center;
+	display: block;
+	width: 64px;
+	height: 64px;
+}
+
+.lc_bottom {
+	height: 100px;
+	position: absolute;
+	bottom: 10px;
+	left: 0;
+}
+
+.lc_bottom p {
+	text-align: right;
+	padding-right: 30px;
+	width: 640px;
+	margin-top: 8px;
+}
+
+.lc_bottom p .my_red {
+	font-size: 30px;
+	font-weight: 600;
+}
+
+.lc_rule {
+	text-decoration: underline;
+	color: #0000FF;
+	font-size: 24px;
+}
+
+.a_hide {
+	z-index: 2000;
+	position: absolute;
+	bottom: 100px;
+	left: 0px;
+	height: 360px;
+	padding: 20px;
+	border: 1px solid #CCCCCC;
+	border-radius: 30px;
+	background: #F8F8F8;
+}
+
+.ahi_ul {
+	margin-top: 10px;
+	text-align: left;
+}
+
+.ahi_ul li {
+	margin: 20px 0;
+}
+
+
+/*员工管理*/
+
+.lContainer3 {
+	top: 4px;
+	bottom: 88px;
+}
+
+.staffUl {
+	width: 100%;
+	overflow: hidden;
+}
+
+.staffLi {
+	height: 220px;
+	padding: 20px 10px;
+}
+
+.lcBottom3 {
+	padding: 0 20px;
+	background: #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	left: 0;
+	width: 100%;
+	position: absolute;
+	bottom: 0;
+	height: 88px;
+}
+
+.staffRemove {
+	float: right;
+	font-size: 28px;
+	padding: 14px 40px;
+	color: #FFFFFF;
+	background: #AF2942;
+	border-radius: 10px;
+	margin-top: 12px;
+}
+
+.staffLi label {
+	height: 100%;
+	vertical-align: middle;
+}
+
+.staffInp {
+	width: 24px;
+	height: 24px;
+	margin: 80px 30px 0 10px;
+}
+
+.staffLi a.fl img {
+	width: 180px;
+}
+
+.staffMan {
+	width: 280px;
+	margin-left: 30px;
+	padding-top: 6px;
+}
+
+.staffMan p {
+	line-height: 180%;
+}
+
+.intro {
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+.staffA {
+	z-index: 1000;
+	display: block;
+	width: 60px;
+	height: 100%;
+	padding-top: 44px;
+	margin-right: 10px;
+}
+
+.staffA img {
+	width: 55px;
+}
+
+.allselect {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	vertical-align: middle;
+}
+
+.lcBottom3 label {
+	display: inline-block;
+	height: 50px;
+	margin-top: 24px;
+	width: 200px;
+}
+
+.lcBottom3 label span {}
+
+.addStaff {
+	width: 66px;
+	height: 66px;
+	margin-right: 20px;
+	background: url(../img/agent/iconfont-jiahao.png) no-repeat center;
+}
+
+
+/*添加员工*/
+
+.add_nav {
+	height: 70px;
+	top: 88px;
+	left: 0;
+	border-bottom: 1px solid #CCCCCC;
+	background: #FFFFFF;
+}
+
+.add_nav a {
+	display: inline-block;
+	float: left;
+	width: 50%;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+}
+
+.add_nav a.active {
+	border: 1px solid #af2942;
+	border-top: none;
+}
+
+.add_container {
+	padding: 30px 50px;
+	top: 158px;
+	bottom: 0;
+	left: 0;
+}
+
+.add_ul li {
+	width: 100%;
+	font-size: 30px;
+	padding-left: 12px;
+	margin-bottom: 30px;
+	background: #FFFFFF;
+	border: 1px solid #d7d7d7;
+	border-radius: 10px;
+	height: 70px;
+	line-height: 70px;
+	color: #666666;
+}
+
+.add_ul li label {
+	display: inline-block;
+	min-width: 130px;
+}
+
+.add_ul li input[type=text] {
+	height: 68px;
+	line-height: 68px;
+	width: auto;
+	color: #333333;
+}
+
+.add_ul .liCode input[type=text] {
+	width: 180px;
+}
+
+.sendCode {
+	height: 68px;
+	line-height: 68px;
+	width: 180px;
+	font-size: 28px;
+	text-align: center;
+	border-left: 1px solid #D7D7D7;
+	border-radius: 10px;
+}
+
+.add_ul .inCode input[type=text] {
+	width: 300px;
+}
+
+.registerStaff {
+	width: 100%;
+	height: 70px;
+	margin-top: 20px;
+	font-size: 32px;
+	border-radius: 10px;
+	background: #AF2942;
+	color: #FFFFFF;
+}
+
+
+/*员工后台*/
+
+.staff_info>div {
+	margin-bottom: 10px;
+	overflow: hidden;
+}
+
+.editInfo {
+	padding: 10px 24px;
+	border-radius: 10px;
+	color: #AF2942;
+	border: 1px solid #CCCCCC;
+	margin-left: 38px;
+	margin-top: 12px;
+	font-size: 26px;
+}
+
+.editable {
+	display: inline-block;
+	/*position: relative;*/
+	height: 38px;
+}
+
+.editable:nth-child(1) {
+	height: 50px;
+}
+
+.editable input {
+	height: 100%;
+	width: 100%;
+	text-indent: 4px;
+	border: 1px solid #CCCCCC;
+}
+
+
+/*时间选择*/
+
+.modalTime {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background: rgba(0, 0, 0, 0.2);
+	display: none;
+	z-index: 7000;
+}
+
+.datetime {
+	position: absolute;
+	background: rgba(255, 255, 255, 1);
+	width: 80%;
+	height: 20%;
+	padding: 4%;
+	left: 10%;
+	top: 40%;
+}
+
+.datetime>label {
+	height: 20%;
+	line-height: 100%;
+	display: block;
+	margin-bottom: 4%;
+}
+
+.datetime>label>input[type=date] {
+	height: 100%;
+	line-height: 100%;
+	background: #EEEEEE;
+}
+
+.datetime>label>span {
+	width: 30%;
+	display: inline-block;
+	text-align: right;
+	margin-right: 4%;
+	vertical-align: middle;
+}
+
+.timeBtn {
+	width: 80%;
+	text-align: center;
+	margin-left: 10%;
+	height: 30%;
+}
+
+.timeBtn button {
+	width: 40%;
+	height: 90%;
+	border: 1px solid #CCCCCC;
+	border-radius: 20px;
+	font-size: 26px;
+	line-height: 90%;
+}
+
+
+/*禁止横屏*/
+
+.landscape_notice {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 1150;
+	background: rgba(0, 0, 0, .8);
+	display: none;
+}
+
+.noticeDiv {
+	top: 50%;
+	position: relative;
+	-webkit-transform: translateY(-50%);
+	color: #FFFFFF;
+	text-align: center;
+	font-size: 28px;
+}
+
+.noticeDiv i {
+	background: url(../img/agent/iconfont-iphonepingmu.png) no-repeat center;
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	background-size: cover;
+}
+
+@media (orientation: landscape) {
+	.landscape_notice {
+		display: block;
+	}
+}
+
+@media only screen and (max-height: 500px) {
+	.landscape_notice {
+		display: none;
+	}
+}
